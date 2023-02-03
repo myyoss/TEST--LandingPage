@@ -147,11 +147,12 @@ body {
   margin-top: 4rem;
   background-color: white;
   color: #000000;
-  width: 30rem;
+  max-width: 30rem;
   margin: 4rem auto;
   padding: 2rem;
   border-radius: 10px;
   text-align: center;
+  box-sizing: border-box;
 }
 .form-wrapper h2 {
   font-size: 20px;
