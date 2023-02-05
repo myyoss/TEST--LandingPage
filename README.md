@@ -1,6 +1,6 @@
 # TEST- QIlanding
 Landing page QI Games
 
-https://myyoss.github.io/TEST-IntellForce/
+https://myyoss.github.io/TEST--LandingPage/
 
 
