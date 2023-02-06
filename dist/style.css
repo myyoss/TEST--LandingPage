@@ -141,7 +141,7 @@ a {
   align-items: center;
   width: 16rem;
   height: 20rem;
-  background-color: #d219e6a5;
+  background-color: #9811a7ba;
   border-radius: 10px;
   box-shadow: 3px 3px 6px gray;
   padding: 1rem;
@@ -219,6 +219,8 @@ a {
   background-color: #d219e65d;
   cursor: pointer;
   border: none;
+  width: 20rem;
+  height: 3rem;
 }
 
 .fade-in {
