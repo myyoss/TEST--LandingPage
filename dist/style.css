@@ -216,7 +216,8 @@ a {
   padding-left: 1rem;
 }
 .form-wrapper .submit {
-  background-color: #d219e65d;
+  background-color: #9811a7ba;
+  color: white;
   cursor: pointer;
   border: none;
   width: 20rem;
