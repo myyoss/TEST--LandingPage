@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   width: 90vw;
   margin: auto;
@@ -7,6 +11,31 @@ body {
   font-family: "Outfit", sans-serif;
   color: white;
   font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.iphone-14 {
+  width: 20%;
+  position: absolute;
+  z-index: -20;
+  top: 160%;
+  left: 54%;
+  background-repeat: no-repeat;
+  -webkit-transform: rotate(40deg);
+  -moz-transform: rotate(40deg);
+  -o-transform: rotate(40deg);
+  -ms-transform: rotate(40deg);
+  transform: rotate(40deg);
+}
+.iphone-14 img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  opacity: 0.9;
 }
 
 .bannerWrapper {
@@ -20,6 +49,7 @@ body {
   margin: auto;
   box-sizing: border-box;
   margin-top: 4rem;
+  margin-bottom: 8rem;
 }
 .bannerWrapper .top,
 .bannerWrapper .bottom {
@@ -32,6 +62,10 @@ body {
 .bannerWrapper .bottom img {
   width: 20%;
   object-fit: contain;
+}
+.bannerWrapper .top h1,
+.bannerWrapper .bottom h1 {
+  margin: 0%;
 }
 .bannerWrapper .top h3,
 .bannerWrapper .bottom h3 {
@@ -74,10 +108,13 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.932);
   color: #000000;
   padding: 2rem;
+  border: 1px solid white;
   border-radius: 10px;
+  width: 80%;
+  margin: auto;
   margin-top: 8rem;
 }
 .closerLook-wrapper .closer-title {
@@ -87,7 +124,7 @@ body {
   font-size: 60px;
   margin: 0%;
   padding: 1rem;
-  -webkit-text-stroke: 1px rgba(95, 158, 160, 0.779);
+  border-bottom: 1px solid black;
 }
 .closerLook-wrapper .closer-features-wrapper {
   display: flex;
@@ -102,8 +139,8 @@ body {
   flex-direction: column;
   text-align: center;
   align-items: center;
-  width: 20rem;
-  height: 30rem;
+  width: 16rem;
+  height: 20rem;
   background-color: #d219e6a5;
   border-radius: 10px;
   box-shadow: 3px 3px 6px gray;
@@ -118,18 +155,19 @@ body {
   flex-direction: column;
   justify-content: baseline;
   align-items: center;
-  border-bottom: 1px solid black;
 }
 .closerLook-wrapper .closer-features-wrapper .closerLook .closer-text h2 {
-  font-size: 2em;
+  font-size: 22px;
+  font-weight: 100;
   color: white;
   padding-bottom: 1rem;
 }
 .closerLook-wrapper .closer-features-wrapper .closerLook .closer-img {
-  width: 10rem;
-  height: 10rem;
+  display: flex;
+  width: 6rem;
+  height: 6rem;
   transition: transform 0.2s;
-  padding: 2rem;
+  padding: 10px;
 }
 .closerLook-wrapper .closer-features-wrapper .closerLook .closer-img img {
   width: 100%;
@@ -144,26 +182,35 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 4rem;
   background-color: white;
-  color: #000000;
+  border: 1px solid black;
+  color: #436f70;
   max-width: 30rem;
-  margin: 4rem auto;
+  margin: 18rem auto;
   padding: 2rem;
   border-radius: 10px;
   text-align: center;
   box-sizing: border-box;
 }
+.form-wrapper h1 {
+  margin: 0%;
+  padding: 0%;
+  margin-bottom: 1rem;
+}
 .form-wrapper h2 {
   font-size: 20px;
   font-weight: 100;
+  color: black;
+  margin: 0%;
+  padding: 0%;
+  margin-bottom: 3rem;
 }
 .form-wrapper input {
   width: 60%;
   height: 2rem;
   margin: 0.5rem;
-  border-radius: 10px;
-  border: 1px solid #ccc;
+  border-radius: 6px;
+  border: 1px solid #858585;
   font-size: 12px;
   background-color: transparent;
   padding-left: 1rem;
@@ -171,4 +218,31 @@ body {
 .form-wrapper .submit {
   background-color: #d219e65d;
   cursor: pointer;
+  border: none;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 550ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
+.promise-text-wrapper,
+.closer-title {
+  transform: translateX(-26%);
+  opacity: 0;
+}
+
+.promise-text-wrapper,
+.closer-title {
+  transition: transform 550ms ease-in-out;
+}
+
+.promise-text-wrapper.appear,
+.closer-title.appear {
+  transform: translateX(0);
+  opacity: 1;
 }
