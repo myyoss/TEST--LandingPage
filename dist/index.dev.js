@@ -22,12 +22,3 @@ faders.forEach(function (fader) {
 sliders.forEach(function (slider) {
   appearOnScroll.observe(slider);
 });
-
-function submitForm() {
-  var form = document.getElementsByName("contact-form")[0];
-  var popUp = document.querySelector(".pop-up-window");
-  form.submit();
-  form.reset();
-  popUp.classList.add("show");
-  return false;
-}

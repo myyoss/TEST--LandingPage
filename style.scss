@@ -15,12 +15,13 @@ body {
     // position: relative;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 
 }
-.iphone-14{
+
+.iphone-14 {
     width: 20%;
     position: absolute;
     z-index: -20;
@@ -32,13 +33,14 @@ a{
     -o-transform: rotate(40deg);
     -ms-transform: rotate(40deg);
     transform: rotate(40deg);
-    img{
+
+    img {
         width: 100%;
         height: auto;
         object-fit: contain;
         opacity: 0.9;
     }
-    
+
 }
 
 div {
@@ -69,7 +71,8 @@ div {
             width: 20%;
             object-fit: contain;
         }
-        h1{
+
+        h1 {
             margin: 0%;
         }
 
