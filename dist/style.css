@@ -18,7 +18,7 @@ a {
   color: inherit;
 }
 
-.iphone-14 {
+.iphone-13 {
   width: 20%;
   position: absolute;
   z-index: -20;
@@ -31,7 +31,7 @@ a {
   -ms-transform: rotate(40deg);
   transform: rotate(40deg);
 }
-.iphone-14 img {
+.iphone-13 img {
   width: 100%;
   height: auto;
   object-fit: contain;
@@ -88,6 +88,7 @@ a {
   font-size: 20px;
   font-weight: 100;
   color: cadetblue;
+  margin: 0%;
 }
 .promiseWrapper .promise-img {
   width: 40rem;
