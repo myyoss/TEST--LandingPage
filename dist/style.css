@@ -22,7 +22,7 @@ a {
   width: 14%;
   position: absolute;
   z-index: -20;
-  top: 160%;
+  top: 170%;
   left: 54%;
   background-repeat: no-repeat;
   -webkit-transform: rotate(40deg);
@@ -184,7 +184,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.951);
   border: 1px solid black;
   color: #436f70;
   max-width: 30rem;
